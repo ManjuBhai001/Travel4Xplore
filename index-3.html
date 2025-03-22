@@ -1,0 +1,2412 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Travel4Xplore</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--Custom CSS-->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!--Plugin CSS-->
+    <link href="css/plugin.css" rel="stylesheet" type="text/css">
+    <!--Flaticons CSS-->
+    <link href="fonts/flaticon.css" rel="stylesheet" type="text/css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <link rel="stylesheet" href="fonts/line-icons.css" type="text/css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+    <!-- Preloader Ends -->
+
+    <!-- header starts -->
+    <header class="main_header_area">
+        <style>
+            .header-content {
+                background-color: #0A3E59 !important;
+            }
+        </style>
+        
+        <div class="header-content py-2">
+            <div class="container d-flex align-items-center justify-content-between">
+                <!-- Left: Contact Info -->
+                <div class="links">
+                    <ul class="list-unstyled d-flex gap-3 m-0">
+                        <li><a href="#" class="text-white"><i class="fa fa-phone"></i> 7037400996</a></li>
+                        <li><a href="#" class="text-white"><i class="fa fa-phone"></i> 9027883901</a></li>
+                        <li><a href="#" class="text-white"><i class="fa fa-envelope"></i> admin@travel4xplore.com</a></li>
+                    </ul>
+                </div>
+                <!-- Right: Social Media Icons -->
+                <div class="links d-flex">
+                    <ul class="list-unstyled d-flex gap-3 m-0">  
+                        <li><a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.1); transition: all 0.3s ease-in-out; text-decoration: none;"
+                            onmouseover="this.style.backgroundColor='rgba(255, 255, 255, 0.3)'; this.style.transform='scale(1.1)';"
+                            onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.1)'; this.style.transform='scale(1)';">
+                            <i class="fab fa-facebook text-white" style="font-size: 18px;"></i>
+                        </a></li>
+                    
+                        <li><a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.1); transition: all 0.3s ease-in-out; text-decoration: none;"
+                            onmouseover="this.style.backgroundColor='rgba(255, 255, 255, 0.3)'; this.style.transform='scale(1.1)';"
+                            onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.1)'; this.style.transform='scale(1)';">
+                            <i class="fab fa-twitter text-white" style="font-size: 18px;"></i>
+                        </a></li>
+                    
+                        <li><a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.1); transition: all 0.3s ease-in-out; text-decoration: none;"
+                            onmouseover="this.style.backgroundColor='rgba(255, 255, 255, 0.3)'; this.style.transform='scale(1.1)';"
+                            onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.1)'; this.style.transform='scale(1)';">
+                            <i class="fab fa-instagram text-white" style="font-size: 18px;"></i>
+                        </a></li>
+                    
+                        <li><a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.1); transition: all 0.3s ease-in-out; text-decoration: none;"
+                            onmouseover="this.style.backgroundColor='rgba(255, 255, 255, 0.3)'; this.style.transform='scale(1.1)';"
+                            onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.1)'; this.style.transform='scale(1)';">
+                            <i class="fab fa-linkedin text-white" style="font-size: 18px;"></i>
+                        </a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Bar -->
+        <div class="header_menu" id="header_menu" style="background-color: #ffc107; padding: 08px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-flex d-flex align-items-center justify-content-between w-100 pb-2 pt-2">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html" aria-label="Go to Home Page">
+                                <img src="images/logo.png" alt="Company Logo" 
+                                     style="width: auto; max-width: 150px; height: auto; display: block; transition: opacity 0.5s ease-in-out;"
+                                     loading="lazy" decoding="async"
+                                     onload="this.style.opacity=1;" onerror="this.style.opacity=1;">
+                            </a>
+                        </div>
+                        
+                        
+                        <!-- Navigation Links -->
+                        <div class="navbar-collapse1 d-flex align-items-center" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav" id="responsive-menu" style="list-style: none; padding: 0; margin: 0;">
+                                <li class="dropdown submenu active">
+                                    <a href="index-3.html" class="dropdown-toggle" role="button" style="color: black; text-decoration: none; padding: 10px; display: block;">Home</a>
+                                </li>
+                                <li><a href="about.html" style="color: black; text-decoration: none; padding: 10px; display: block;">About Us</a></li>
+                                <li><a href="about.html" style="color: black; text-decoration: none; padding: 10px; display: block;">Chardham</a></li>
+                                <li class="submenu dropdown">
+                                    <a href="destination.html" class="dropdown-toggle" style="color: black; text-decoration: none; padding: 10px; display: block;">Domestic <i class="icon-arrow-down"></i></a>
+                                    <ul class="dropdown-menu" style="background: white; padding: 10px; border-radius: 5px;">
+                                        <li><a href="destination-list.html" style="color: black; text-decoration: none; padding: 10px; display: block;">Destination List</a></li>
+                                        <li><a href="destination-grid.html" style="color: black; text-decoration: none; padding: 10px; display: block;">Destination Grid</a></li>
+                                        <li><a href="destination-grid.html" style="color: black; text-decoration: none; padding: 10px; display: block;">Destination Grid</a></li>
+                                        <li><a href="destination-grid.html" style="color: black; text-decoration: none; padding: 10px; display: block;">Destination Grid</a></li>
+                                        <li><a href="destination-grid.html" style="color: black; text-decoration: none; padding: 10px; display: block;">Destination Grid</a></li>
+                                        <li><a href="destination-grid.html" style="color: black; text-decoration: none; padding: 10px; display: block;">Destination Grid</a></li>
+                                        <li><a href="destination-grid.html" style="color: black; text-decoration: none; padding: 10px; display: block;">Destination Grid</a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu dropdown">
+                                    <a href="dashboard.html" class="dropdown-toggle" style="color: black; text-decoration: none; padding: 10px; display: block;">International <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu" style="background: white; padding: 10px; border-radius: 5px;">
+                                        <li><a href="dashboard.html" style="color: black; text-decoration: none; padding: 10px; display: block;">Dubai</a></li>
+                                        <li><a href="dashboard-my-profile.html" style="color: black; text-decoration: none; padding: 10px; display: block;">Bali</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html" style="color: black; text-decoration: none; padding: 10px; display: block;">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <!-- Navigation Bar Ends -->
+    </header>
+    <!-- header ends -->
+
+    <!-- banner starts -->
+    <section class="banner overflow-hidden">
+        <div class="slider slider1">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-inner">
+                            <div class="slide-image" style="background-image: url(images/slider/8.png); background-size: cover; background-position: center; transition: transform 0.5s ease-in-out;"></div>
+                            <div class="swiper-content container" style="text-align: center; color: white; text-shadow: 1px 1px 4px rgba(0,0,0,0.7);">
+                                <h1 class="white mb-2">Travel – Explore the world with a backpack</h1>
+                                <p class="white mb-4">Primis aptent vel turpis a a class suspendisse et augue orci a diam tristique consequat hendrerit ullamcorper top50torquent</p>
+                                <a href="#" class="per-btn" aria-label="Read More" style="display: inline-block; padding: 10px 20px; background: rgba(255, 255, 255, 0.2); border-radius: 5px; text-decoration: none;">
+                                    <span class="white">Read More</span>
+                                    <i class="fa fa-arrow-right white"></i>
+                                </a>
+                            </div>
+                            <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3);"></div>
+                        </div> 
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="slide-inner">
+                            <div class="slide-image" style="background-image: url(images/slider/5.png); background-size: cover; background-position: center; transition: transform 0.5s ease-in-out;"></div>
+                            <div class="swiper-content1 container" style="text-align: center; color: white; text-shadow: 1px 1px 4px rgba(0,0,0,0.7);">
+                                <h1 class="white mb-2">IT’S A BIG WORLD OUT THERE GO EXPLORE</h1>
+                                <p class="white mb-4">Lorem consectetur adipiscing elit, sed do eiusmod tempor dolor sit amet <br> contetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                                <a href="#" class="per-btn" aria-label="Contact Us" style="display: inline-block; padding: 10px 20px; background: rgba(255, 255, 255, 0.2); border-radius: 5px; text-decoration: none;">
+                                    <span class="white">Contact Us</span>
+                                    <i class="fa fa-arrow-right white"></i>
+                                </a>
+                            </div>
+                            <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3);"></div>
+                        </div> 
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="slide-inner">
+                            <div class="slide-image" style="background-image: url(images/slider/10.png); background-size: cover; background-position: center; transition: transform 0.5s ease-in-out;"></div>
+                            <div class="swiper-content2 container" style="text-align: center; color: white; text-shadow: 1px 1px 4px rgba(0,0,0,0.7);">
+                                <h1 class="white mb-2">DISCOVER THE WORLD YOU HAVE NEVER SEEN</h1>
+                                <p class="white mb-4">Lorem consectetur adipiscing elit, sed do eiusmod tempor dolor sit amet <br> contetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                                <a href="#" class="per-btn" aria-label="Discover" style="display: inline-block; padding: 10px 20px; background: rgba(255, 255, 255, 0.2); border-radius: 5px; text-decoration: none;">
+                                    <span class="white">Discover</span>
+                                    <i class="fa fa-arrow-right white"></i>
+                                </a>
+                            </div>
+                            <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3);"></div>
+                        </div> 
+                    </div>
+                </div>
+                
+                <!-- Add Pagination -->
+                <div class="swiper-pagination" style="position: absolute; bottom: 20px;"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- banner ends -->
+
+    <!-- form starts -->
+    <style>
+        .nav-tabs li a {
+            color: black;
+            padding: 10px 15px;
+            display: block;
+            transition: 0.3s;
+        }
+    
+        .nav-tabs li.active a {
+            color: white;
+            background-color: red;
+            border-radius: 5px;
+        }
+    </style>
+    
+    <div class="form-main">
+        <div class="container">
+            <div class="form-content form-content1 w-100 transparent p-0 shadow-none position-relative">
+                <div class="form-navtab text-center">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a data-toggle="tab" href="#tour" onclick="changeTab(event, 'tour')">
+                                <i class="flaticon-global"></i> Tours
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#hotel" onclick="changeTab(event, 'hotel')">
+                                <i class="flaticon-building"></i> Hotel
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="tab-content">
+                    <!-- Tour Tab -->
+                    <div id="tour" class="tab-pane active in">
+                        <form id="tourForm">
+                            <div class="row d-flex align-items-center justify-content-between">
+                                <div class="col-lg">
+                                    <div class="form-group mb-0">
+                                        <label>Your Destination</label>
+                                        <div class="input-box">
+                                            <i class="flaticon-placeholder"></i>
+                                            <input type="text" class="form-control" placeholder="Where are you going?" name="destination">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group mb-0">
+                                        <label>Check In</label>
+                                        <div class="input-box">
+                                            <i class="flaticon-calendar"></i>
+                                            <input type="date" name="checkin">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group mb-0">
+                                        <label>Check Out</label>
+                                        <div class="input-box">
+                                            <i class="flaticon-calendar"></i>
+                                            <input type="date" name="checkout">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group mb-0">
+                                        <label>No. Of People</label>
+                                        <div class="input-box">
+                                            <i class="flaticon-add-user"></i>
+                                            <select class="niceSelect" name="people">
+                                                <option value="" disabled selected>Select</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group mb-0">
+                                        <label>Phone Number</label>
+                                        <div class="input-box">
+                                            <i class="flaticon-phone-call"></i>
+                                            <input type="tel" class="form-control" placeholder="Enter your phone number" name="phone">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group mb-0 mt-3">
+                                        <button type="button" class="nir-btn w-100" onclick="sendDetails('tour', 'tourForm')">Send Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+    
+                    <!-- Hotel Tab -->
+                    <div id="hotel" class="tab-pane">
+                        <form id="hotelForm">
+                            <div class="row d-flex align-items-center justify-content-between">
+                                <div class="col-lg">
+                                    <div class="form-group mb-0">
+                                        <label>Your Destination</label>
+                                        <div class="input-box">
+                                            <i class="flaticon-placeholder"></i>
+                                            <input type="text" class="form-control" placeholder="Where are you going?" name="destination">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group mb-0">
+                                        <label>Reserved Date</label>
+                                        <div class="input-box">
+                                            <i class="flaticon-calendar"></i>
+                                            <input type="date" name="reserved_date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group mb-0">
+                                        <label>Hotel Types</label>
+                                        <div class="input-box">
+                                            <i class="flaticon-add-user"></i>
+                                            <select class="niceSelect" name="hotel_type">
+                                                <option value="" disabled selected>Select</option>
+                                                <option value="High Class">High Class</option>
+                                                <option value="Middle Class">Middle Class</option>
+                                                <option value="Low Class">Low Class</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group mb-0">
+                                        <label>Person</label>
+                                        <div class="input-box">
+                                            <i class="flaticon-add-user"></i>
+                                            <select class="niceSelect" name="people">
+                                                <option value="" disabled selected>Select</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group mb-0">
+                                        <label>Phone Number</label>
+                                        <div class="input-box">
+                                            <i class="flaticon-phone-call"></i>
+                                            <input type="tel" class="form-control" placeholder="Enter your phone number" name="phone">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group mb-0 mt-3">
+                                        <button type="button" class="nir-btn w-100" onclick="sendDetails('hotel', 'hotelForm')">Send Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    function sendDetails(type, formId) {
+        let adminNumber = "919557911144"; 
+        let form = document.getElementById(formId);
+        let formData = new FormData(form);
+    
+        let destination = formData.get("destination");
+        let phone = formData.get("phone");
+        let people = formData.get("people");
+    
+        if (!destination || !phone || !people) {
+            alert("Please fill in all required fields.");
+            return;
+        }
+    
+        let details = `Destination: ${destination}\nPhone: ${phone}\nNo. of People: ${people}\n`;
+    
+        if (type === "tour") {
+            details += `Check-In: ${formData.get("checkin")}\nCheck-Out: ${formData.get("checkout")}\n`;
+        } else {
+            details += `Reserved Date: ${formData.get("reserved_date")}\nHotel Type: ${formData.get("hotel_type")}\n`;
+        }
+    
+        let whatsappURL = `https://wa.me/${adminNumber}?text=${encodeURIComponent(details)}`;
+        window.open(whatsappURL, "_blank");
+    
+        alert("Your details have been sent! Our team will contact you soon.");
+        form.reset();
+    }
+    
+    function changeTab(event, tabId) {
+        event.preventDefault();
+    
+        document.querySelectorAll(".nav-tabs li").forEach(tab => tab.classList.remove("active"));
+        event.target.parentElement.classList.add("active");
+    
+        document.querySelectorAll(".tab-pane").forEach(tab => tab.classList.remove("active", "in"));
+        document.getElementById(tabId).classList.add("active", "in");
+    }
+    </script>
+    <!-- form ends -->
+
+    <!-- Trending Starts -->
+    <section class="trending destination-b" style="padding: 40px 0; background-color: #f8f9fa;">
+         <div class="container">
+            <div class="section-title text-center" style="margin-bottom: 40px; padding-bottom: 10px; width: 50%; margin-left: auto; margin-right: auto;">
+                <h2 style="margin: 0; font-size: 32px; font-weight: bold; color: #333;">Perfect <span style="color: #ff5733;">Deals & Discounts</span></h2>
+                <p style="margin-bottom: 0; font-size: 16px; color: #666;">Travel has helped us to understand the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes.</p>
+            </div>  
+            <div class="trend-box">
+                <div class="row team-slider">
+
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='ManaliLahaul.html'" style="border: 1px solid #ddd;  border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>25% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending1.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Himachal Pradesh</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;">Manali Lahaul Valley Expedition (4N/5D)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">38 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">Manali is a beautiful valley of mountains surrounded by mesmerizing views.</p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 5 days & 4 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 9999/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <!-- First image ends -->
+                <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                    <div class="trend-item" onclick="location.href='Manali-Tirthan.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                        <div class="ribbon ribbon-top-left"><span>30% OFF</span></div>
+                        <div class="trend-image" style="position: relative; overflow: hidden;">
+                            <img src="images/trending/trending2.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                        </div>
+                        <div class="trend-content-main" style="padding: 15px;">
+                            <div class="trend-content">
+                                <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Himachal Pradesh</h6>
+                                <h4 style="font-size: 18px; font-weight: bold; color: #333;">Manali-Tirthan Valley Tour (5N/6D)</h4>
+                                <div class="rating-main" style="display: flex; align-items: center;">
+                                    <div class="rating">
+                                        <span class="fa fa-star checked" style="color: gold;"></span>
+                                        <span class="fa fa-star checked" style="color: gold;"></span>
+                                        <span class="fa fa-star checked" style="color: gold;"></span>
+                                        <span class="fa fa-star checked" style="color: gold;"></span>
+                                        <span class="fa fa-star checked" style="color: gold;"></span>
+                                    </div>
+                                    <span style="margin-left: 10px; font-size: 14px; color: #777;">38 Reviews</span>
+                                </div>
+                            </div>
+                            <div class="trend-last-main" style="margin-top: 10px;">
+                                <p style="margin-bottom: 5px; font-size: 14px; color: #666;">Experience the perfect blend of adventure and serenity with this 5-night, 6-day tour.</p>
+                                <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                    <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 6 days & 5 nights</p>
+                                    <div class="trend-price">
+                                        <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 19999/-</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    <!-- Second Image ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='Leh-Ladakh.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>40% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending4.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Ladakh</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;">Leh-Ladakh Adventure Tour (6N/7D)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">38 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">Embark on an unforgettable journey through the breathtaking landscapes of Leh-Ladakh. </p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 days & 6 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 24,999/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third Image Ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='Shimlamanali.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>20% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending99.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Himachal Pradesh</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;">Shimla Manali Honeymoon Trip (6N/7D)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">38 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">Embark on a romantic journey starting from Delhi, exploring the serene charm of Shimla with visits to Kufri, Mall Road, and Jakhoo Temple. </p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 days & 6 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 35,999/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fourth Image Ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='ShimlaKufri.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>30% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending101.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Himachal Pradesh</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;">Shimla Kufri Short Trip (3N/4D)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">42 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">Experience the thrill of adventure in Kufri with activities like horse riding and yak rides amidst picturesque snow-capped mountains.</p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 4 days & 3 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 16,999/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fifth Image ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='BadrinathKedarnath.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>30% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending102.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Uttarakhand</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;">Badrinath & Kedarnath Package (5N/6D)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">42 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">Kedarnath and Badrinath are two sacred pilgrimage sites in Uttarakhand, part of the Char Dham Yatra.</p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 6 days & 5 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 12,500/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6th Image Ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='Yamunotri.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>35% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending103.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Uttarakhand</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;">Yamunotri & Gangotri Package (4N/5D)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">42 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">Yamunotri is the source of The yamuna river and is home to the Yamunotri Temple, dedicated to the goddess Yamuna.</p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 5 days & 4 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 10,500/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 7th Image ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='Manali-LehBike.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>45% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending104.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Himachal Pradesh</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;">Manali-Leh Bike Trip Package (9N/10D)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">42 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">Embark on an exhilarating adventure with Travel4Xplore’s Manali-Leh Bike Trip, designed for thrill-seekers and nature enthusiasts. </p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 10 days & 9 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 39,999/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 8th image ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='Yamunotrisingle.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>40% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending105.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Uttarakhand</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;"> Yamunotri Package (2N/3D)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">42 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">Yamunotri, located in Uttarakhand, is the source of the Yamuna River and one of the Char Dham shrines.</p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 3 days & 2 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 7,999/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 9th Image Ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='Gangotrisingle.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>20% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending106.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Uttarakhand</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;"> Gangotri Package (2N/3D)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">42 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">
+                                        Gangotri is a sacred pilgrimage site in Uttarakhand, dedicated to Goddess Ganga.</p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 3 days & 2 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 7,999/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 10th Image Ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='Gangotrisingle.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>25% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending107.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Uttarakhand</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;"> The Amazing Kedarkantha Trek (5N/6D)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">12 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">
+                                        The Kedarkantha Trek is one of the most popular and scenic winter treks in India, offering panoramic views of snow-clad peaks and serene landscapes.</p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 6 days & 5 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 9,999/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 11th Image ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='Lehladakhbiketour.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>25% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending108.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Jammu & Kashmir</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;"> Leh-Ladakh MotorBike Tour (5N/6D)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">12 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">
+                                        Embark on an unforgettable motorbike adventure with Travel4Xplore as you traverse the rugged beauty of Leh Ladakh.</p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 6 days & 5 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 21,999/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 12th Image ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='Kedarnath.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>35% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending109.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Uttarakhand</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;"> Kedarnath Package (3N/4D)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">12 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">
+                                        The Kedarnath 3 Nights & 4 Days package offers an unforgettable pilgrimage experience, combining spiritual moments with scenic beauty.</p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 4 days & 3 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 9,499/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 13th Image ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='Badrinath.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>35% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending110.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Uttarakhand</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;"> Badrinath Package (2N/3D)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">12 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">
+                                        Badrinath, located in Uttarakhand, is a major Hindu pilgrimage site dedicated to Lord Vishnu.</p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 3 days & 2 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 8,999/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 14th Image Ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='Manaliladakh.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>30% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending111.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Ladakh</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;"> Manali-Ladakh Package by Travel4Xplore (12N/13D)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">62 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">
+                                        Embark on an unforgettable adventure with Travel4Xplore’s Manali-Ladakh Package, covering scenic landscapes, high-altitude passes, and serene lakes.</p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 13 days & 12 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 39,999/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 15th Image Ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='Chardahamyatrastandard.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>30% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending112.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Uttarakhand</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;"> Chardham Yatra - Standard Package (9N/10D)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">62 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">
+                                        Embark on a sacred journey to the four holy shrines of Yamunotri, Gangotri, Kedarnath, and Badrinath with our Chardham Yatra Standard Package.</p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 10 days & 9 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 19,999/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 16th Image Ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='Chardahamyatrastandard.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>30% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending112.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Ladakh</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;"> Manali-Ladakh Package by Travel4Xplore (12N/13D)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">62 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">
+                                        Embark on a sacred journey to the four holy shrines of Yamunotri, Gangotri, Kedarnath, and Badrinath with our Chardham Yatra Standard Package.</p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 13 days & 12 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 39,999/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 17 Image Ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='RishikeshAuli.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>30% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending113.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Ladakh</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;"> Rishikesh Auli Chakrata</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">62 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">
+                                        
+Embark on a refreshing journey through the scenic landscapes of Uttarakhand with this 4-night/5-day itinerary.</p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 05 days</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 20,999/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 18th image ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='NainitalMukteshwar.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>35% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending112.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Uttarakhand</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;"> Nainital – Mukteshwar (3N/4D)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">72 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">
+                                        Discover the best of Uttarakhand with this combined Nainital and Mukteshwar package.</p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 4 days & 3 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 14,000/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 19th image ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='RishikeshMussorieChakrata.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>15% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending114.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Uttarakhand</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;"> Rishikesh Mussoorie Chakrata</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">72 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">
+                                        Discover the best of Uttarakhand with this combined Nainital and Mukteshwar package.</p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 5 days & 4 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 10,000/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 20th Image Ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='Chardhamdivine.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>15% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending115.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Uttarakhand</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;"> The Divine Chardham Yatra (Standard Package)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">72 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">
+                                        Embark on the ultimate spiritual journey with our Divine Chardham Yatra package, covering the four sacred shrines of Yamunotri, Gangotri, Kedarnath, and Badrinath. </p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 9 days & 8 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 18,000/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 21 image ends -->
+                    <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                        <div class="trend-item" onclick="location.href='Chardhamdivine.html'" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;">
+                            <div class="ribbon ribbon-top-left"><span>15% OFF</span></div>
+                            <div class="trend-image" style="position: relative; overflow: hidden;">
+                                <img src="images/trending/trending116.png" alt="image" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                            </div>
+                            <div class="trend-content-main" style="padding: 15px;">
+                                <div class="trend-content">
+                                    <h6 style="font-weight: normal; font-size: 14px; color: #555;"><i class="fa fa-map-marker-alt" style="color: #ff5733;"></i> Himachal Pradesh</h6>
+                                    <h4 style="font-size: 18px; font-weight: bold; color: #333;"> Manali-Kasol (3 Night stay and 2 overnight journey)</h4>
+                                    <div class="rating-main" style="display: flex; align-items: center;">
+                                        <div class="rating">
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                            <span class="fa fa-star checked" style="color: gold;"></span>
+                                        </div>
+                                        <span style="margin-left: 10px; font-size: 14px; color: #777;">72 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="trend-last-main" style="margin-top: 10px;">
+                                    <p style="margin-bottom: 5px; font-size: 14px; color: #666;">
+                                        Embark on the ultimate spiritual journey with our Divine Chardham Yatra package, covering the four sacred shrines of Yamunotri, Gangotri, Kedarnath, and Badrinath. </p>
+                                    <div class="trend-last" style="display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 10px; border-radius: 5px;">
+                                        <p style="margin: 0; color: #fff; font-size: 14px;"><i class="fa fa-clock-o" aria-hidden="true"></i> 6 days & 5 nights</p>
+                                        <div class="trend-price">
+                                            <p style="margin: 0; font-size: 16px; font-weight: bold; color: #fff;">From <span>Rs. 9,999/-</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 22 image ends -->
+                </div>
+            </div>    
+        </div>
+    </section>
+    <!-- Trending Ends -->
+
+    <!-- about-us starts -->
+    <section class="about-us bg-grey pb-6" style="background: #f7f7f7; padding-bottom: 60px;">
+        <div class="container">
+            <div class="about-image-box mb-5">
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="about-content">
+                            <h4 class="mb-2 font-weight-normal blue" style="color: #000; font-size: 20px;">About Travel4Xplore</h4>
+                            <h2 style="font-size: 28px; font-weight: bold; color: #000; line-height: 1.5;">We're Truly Dedicated To Making Your Travel Experience</h2>
+                            <p class="mb-3" style="font-size: 16px; color: #000; line-height: 1.8;">
+                                Join our group tours to explore stunning destinations with like-minded travelers. Enjoy personalized experiences with our private tours, perfect for families, couples, or friends seeking exclusivity. Customize your dream vacation with our tailor-made tours.
+                            </p>
+                            <div class="about-featured">
+                                <ul style="list-style: none; padding-left: 0; font-size: 16px; color: #000; max-width: 90%; line-height: 1.8; font-weight: 500;">
+                                    <li>✔️ Safety Travel System</li>
+                                    <li>✔️ 07+ Years of Experience</li>
+                                    <li>✔️ Budget-Friendly Tour</li>
+                                    <li>✔️ Expert Trip Planning</li>
+                                    <li>✔️ Fast Communication</li>
+                                    <li>✔️ Right Solution & Guide</li>
+                                    <li>✔️ Leading Travel Agency in North India</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="about-image-main">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 mt-4">
+                                    <img src="images/new-deal/deal3.png" alt="" style="width: 100%; height: 270px; object-fit: cover; border-radius: 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.15);">
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <img src="images/new-deal/deal5.png" alt="" style="width: 100%; height: 270px; object-fit: cover; border-radius: 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.15);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Why Us Section -->
+            <div class="why-us pt-5 border-t" style="border-top: 2px solid #ccc; padding-top: 50px;">
+                <div class="why-us-box">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="why-us-item text-center bg-lgrey" style="background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.12); transition: transform 0.3s ease; cursor: pointer;">
+                                <div class="why-us-icon mb-3" style="font-size: 28px;">
+                                    <i class="flaticon-call" style="color: #ff3366;"></i>
+                                </div>
+                                <div class="why-us-content">
+                                    <h4><a href="contactus.html" style="color: #000; text-decoration: none; font-weight: bold;">24/7 Support</a></h4>
+                                    <p class="mb-0" style="font-size: 16px; color: #000; line-height: 1.6;">We are available round the clock to assist you on your travel journey.</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="why-us-item text-center bg-lgrey" style="background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.12); transition: transform 0.3s ease; cursor: pointer;">
+                                <div class="why-us-icon mb-3" style="font-size: 28px;">
+                                    <i class="flaticon-building" style="color: #ff3366;"></i>
+                                </div>
+                                <div class="why-us-content">
+                                    <h4><a href="contactus.html" style="color: #000; text-decoration: none; font-weight: bold;">Luxury Stays</a></h4>
+                                    <p class="mb-0" style="font-size: 16px; color: #000; line-height: 1.6;">Experience premium hotels and resorts with great deals and discounts.</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="why-us-item text-center bg-lgrey" style="background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.12); transition: transform 0.3s ease; cursor: pointer;">
+                                <div class="why-us-icon mb-3" style="font-size: 28px;">
+                                    <i class="flaticon-location-pin" style="color: #ff3366;"></i>
+                                </div>
+                                <div class="why-us-content">
+                                    <h4><a href="contactus.html" style="color: #000; text-decoration: none; font-weight: bold;">Exclusive Tours</a></h4>
+                                    <p class="mb-0" style="font-size: 16px; color: #000; line-height: 1.6;">Discover handpicked travel packages tailored for an unforgettable experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Why Us Section Ends -->
+        </div>
+    </section>
+    
+    
+    
+    <!-- about-us ends -->
+
+    <!-- Call to action starts -->
+    <section class="call-to-action call-to-action1 pb-6 pt-10" style="background-image:url(images/bg/bg6.png); position: relative;">
+        <div class="call-main">
+            <div class="container">
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col-lg-6 mb-4">
+                        <div class="action-content" style="background: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 8px;">
+                            <h3 class="white mb-0 text-uppercase">Find next place to visit</h3>
+                            <h2 class="white call-name">EXPLORE THE WORLD</h2>
+                            <p class="white mb-4">At Travel4xplore, we specialize in crafting seamless travel experiences by offering complete and customizable packages designed to meet the needs of every guest. Our mission is to ensure that every journey is smooth, enjoyable, tailored and stress-free. From flights/ cabs/ rides along with accommodations to excursions , we handle all the details, allowing you to focus on making memories. With a team of dedicated professionals, we are committed to delivering exceptional service and personalized travel solutions that cater to your unique preferences. Let us turn your travel dreams into reality!!</p>
+                            <a href="contact.html" class="nir-btn" aria-label="Explore destinations">Go Explore <i class="fa fa-arrow-right"></i></a>
+                        </div> 
+                    </div>
+    
+                    <div class="col-lg-6 mb-4">
+                        <div class="video-container" style="border-radius: 12px; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.12);">
+                            <video controls autoplay muted loop width="100%" style="border-radius: 12px;">
+                                <source src="images/tour.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="dot-overlay"></div>
+    </section>
+    
+    <!-- call to action Ends -->
+
+    <!-- top destination starts -->
+    <section class="top-destination overflow-hidden bg-navy p-0">
+        <div class="container-fluid">
+            <div class="desti-inner">
+                <style>
+                    /* Styling the stars in golden color */
+                    .rating .checked {
+                        color: gold;
+                        font-size: 18px;
+                    }
+                
+                    /* Adding hover effects on images */
+                    .desti-image img {
+                        transition: transform 0.3s ease-in-out;
+                    }
+                
+                    .desti-image:hover img {
+                        transform: scale(1.05);
+                    }
+                
+                    /* Making the overlay appear on hover smoothly */
+                    .desti-overlay {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        background: rgba(0, 0, 0, 0.6);
+                        transform: translateY(100%);
+                        transition: transform 0.3s ease-in-out;
+                    }
+                
+                    .desti-image:hover .desti-overlay {
+                        transform: translateY(0);
+                    }
+                
+                    /* Improving button styling */
+                    .nir-btn {
+                        background: #ff9800;
+                        padding: 10px 15px;
+                        border-radius: 5px;
+                        display: inline-flex;
+                        align-items: center;
+                        transition: background 0.3s;
+                    }
+                
+                    .nir-btn:hover {
+                        background: #e68900;
+                    }
+                </style>
+                
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg p-0">
+                        <div class="desti-image bordernone">
+                            <img src="images/destination/destination5.png" alt="Manali Lahaul Tour">
+                            <div class="desti-content">
+                                <div class="rating mb-1">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <h4 class="white mb-0">Manali Lahaul Tour</h4>
+                            </div>
+                            <div class="desti-overlay">
+                                <a href="contact.html" class="nir-btn">
+                                    <span class="white">Book Now</span>
+                                    <i class="fa fa-arrow-right white pl-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg p-0">
+                        <div class="desti-image bordernone">
+                            <img src="images/destination/destination7.png" alt="Tirthan Valley">
+                            <div class="desti-content">
+                                <div class="rating mb-1">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <h4 class="white mb-0">Tirthan Valley</h4>
+                            </div>
+                            <div class="desti-overlay">
+                                <a href="contact.html" class="nir-btn">
+                                    <span class="white">Book Now</span>
+                                    <i class="fa fa-arrow-right white pl-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg p-0">
+                        <div class="desti-image bordernone">
+                            <img src="images/destination/destination8.png" alt="Leh-Ladakh">
+                            <div class="desti-content">
+                                <div class="rating mb-1">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <h4 class="white mb-0">Leh-Ladakh</h4>
+                            </div>
+                            <div class="desti-overlay">
+                                <a href="contact.html" class="nir-btn">
+                                    <span class="white">Book Now</span>
+                                    <i class="fa fa-arrow-right white pl-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg p-0">
+                        <div class="desti-image bordernone">
+                            <img src="images/destination/destination9.png" alt="Shimla Tour">
+                            <div class="desti-content">
+                                <div class="rating mb-1">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <h4 class="white mb-0">Shimla Tour</h4>
+                            </div>
+                            <div class="desti-overlay">
+                                <a href="contact.html" class="nir-btn">
+                                    <span class="white">Book Now</span>
+                                    <i class="fa fa-arrow-right white pl-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg p-0">
+                        <div class="desti-image bordernone">
+                            <img src="images/destination/destination10.png" alt="Kedarkantha Tour">
+                            <div class="desti-content">
+                                <div class="rating mb-1">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <h4 class="white mb-0">Kedarkantha Tour</h4>
+                            </div>
+                            <div class="desti-overlay">
+                                <a href="contact.html" class="nir-btn">
+                                    <span class="white">Book Now</span>
+                                    <i class="fa fa-arrow-right white pl-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg p-0">
+                        <div class="desti-image bordernone">
+                            <img src="images/destination/destination12.png" alt="desti">
+                            <div class="desti-content">
+                                <div class="rating mb-1">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <h4 class="white mb-0">Manali Ladakh</h4>
+                            </div>
+                            <div class="desti-overlay">
+                                <a href="#" class="nir-btn">
+                                  <span class="white">Book Now</span>
+                                    <i class="fa fa-arrow-right white pl-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg p-0">
+                        <div class="desti-image bordernone">
+                            <img src="images/destination/destination3.png" alt="Nainital">
+                            <div class="desti-content">
+                                <div class="rating mb-1">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <h4 class="white mb-0">Nainital</h4>
+                            </div>
+                            <div class="desti-overlay">
+                                <a href="contact.html" class="nir-btn">
+                                  <span class="white">Book Now</span>
+                                    <i class="fa fa-arrow-right white pl-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg p-0">
+                        <div class="desti-image bordernone">
+                            <img src="images/destination/destination4.png" alt="Rishikesh">
+                            <div class="desti-content">
+                                <div class="rating mb-1">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <h4 class="white mb-0">Rishikesh</h4>
+                            </div>
+                            <div class="desti-overlay">
+                                <a href="contact.html" class="nir-btn">
+                                  <span class="white">Book Now</span>
+                                    <i class="fa fa-arrow-right white pl-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg p-0">
+                        <div class="desti-image bordernone">
+                            <img src="images/destination/destination11.png" alt="Chakrata">
+                            <div class="desti-content">
+                                <div class="rating mb-1">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <h4 class="white mb-0">Chakrata Tour</h4>
+                            </div>
+                            <div class="desti-overlay">
+                                <a href="contact.html" class="nir-btn">
+                                  <span class="white">Book Now</span>
+                                    <i class="fa fa-arrow-right white pl-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section>
+    <!-- top destination ends -->
+
+    <!-- Fav destination Starts -->
+    <section class="trending destination pb-6 bg-grey pt-9">
+        <div class="container">
+            <style>
+                .section-title {
+                    max-width: 650px; /* Better readability */
+                    text-align: center;
+                    margin: 0 auto 40px;
+                    position: relative;
+                }
+            
+                .section-title h2 {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    color: #333;
+                    position: relative;
+                    display: inline-block;
+                    padding-bottom: 10px;
+                }
+            
+                /* Underline effect for heading */
+                .section-title h2::after {
+                    content: "";
+                    width: 60px;
+                    height: 4px;
+                    background: #ff9800;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: 2px;
+                }
+            
+                /* Highlighted span with gradient */
+                .section-title h2 span {
+                    background: linear-gradient(90deg, #ff9800, #ff5722);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            
+                .section-title p {
+                    font-size: 1rem;
+                    color: #666;
+                    line-height: 1.6;
+                    max-width: 600px;
+                    margin: 10px auto 0;
+                }
+            
+                /* Fade-in animation */
+                .section-title {
+                    opacity: 0;
+                    transform: translateY(20px);
+                    animation: fadeInUp 1s ease-in-out forwards;
+                }
+            
+                @keyframes fadeInUp {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            </style>
+            
+            <div class="section-title">
+                <h2>Find Your <span>Favourite Destination</span></h2>
+                <p>Travel has helped us to understand the meaning of life and has made us better people. Each time we travel, we see the world with new eyes.</p>
+            </div>
+            <div class="trend-box">
+                <style>
+                    .price-navtab {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 20px;
+                    }
+                
+                    .nav-tabs {
+                        border: none; /* Removes default tab borders */
+                    }
+                
+                    .nav-tabs li {
+                        margin: 0 8px;
+                    }
+                
+                    .nav-tabs li a {
+                        display: block;
+                        padding: 12px 20px;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: #333;
+                        border-radius: 25px;
+                        background: #f5f5f5;
+                        transition: all 0.3s ease-in-out;
+                        text-decoration: none;
+                    }
+                
+                    .nav-tabs li a:hover {
+                        background: #ff9800;
+                        color: white;
+                    }
+                
+                    /* ACTIVE TAB (Turns Red) */
+                    .nav-tabs .nav-item .nav-link.active {
+                        background: red !important;
+                        color: white !important;
+                        border: none;
+                    }
+                
+                    /* INACTIVE TABS */
+                    .nav-tabs .nav-item .nav-link {
+                        background: #f5f5f5;
+                        color: #333;
+                    }
+                </style>
+                
+                <div class="price-navtab text-center">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#">Dubai</a>
+                        </li>
+                     </ul>
+                </div>
+                
+                <div class="tab-content">
+                    <style>
+                        /* Trend Item Styling */
+                        .trend-item {
+                            border-radius: 10px;
+                            overflow: hidden;
+                            transition: transform 0.3s ease-in-out;
+                            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                            background: white;
+                        }
+                    
+                        .trend-item:hover {
+                            transform: translateY(-5px);
+                            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+                        }
+                    
+                        /* Trend Image */
+                        .trend-image img {
+                            width: 100%;
+                            height: auto;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            transition: transform 0.3s ease-in-out;
+                        }
+                    
+                        .trend-item:hover .trend-image img {
+                            transform: scale(1.05);
+                        }
+                    
+                        /* Trend Content */
+                        .trend-content-main {
+                            padding: 15px;
+                            background: #fff;
+                        }
+                    
+                        .trend-content h4 a {
+                            color: #222;
+                            text-decoration: none;
+                            font-weight: 600;
+                            transition: color 0.3s ease-in-out;
+                        }
+                    
+                        .trend-content h4 a:hover {
+                            color: #ff9800;
+                        }
+                    
+                        .rating span.checked {
+                            color: #ff9800;
+                        }
+                    
+                        .trend-para {
+                            font-size: 14px;
+                            color: #555;
+                        }
+                    
+                        /* Reviewer Section */
+                        .trend-last {
+                            margin-top: 10px;
+                        }
+                    
+                        .d-author {
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+                    
+                        .trend-price a i {
+                            font-size: 18px;
+                            transition: color 0.3s ease-in-out;
+                        }
+                    
+                        .trend-price a i:hover {
+                            color: red;
+                        }
+                    </style>
+                    
+                    <div id="historical" class="tab-pane fade in active">
+                        <div class="row g-4"> <!-- Added gap -->
+                            <!-- Tour 1 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="trend-item">
+                                    <div class="trend-image">
+                                        <img src="images/trending/trending8.png" alt="image">
+                                    </div>
+                                    <div class="trend-content-main">
+                                        <div class="trend-content">
+                                            <div class="rating-main d-flex align-items-center pb-1">
+                                                <div class="rating">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                </div>
+                                                <span class="ml-2">38 Reviews</span>
+                                            </div>
+                                            <h4><a href="#">Dubai Special Tour</a></h4>
+                                            <p class="mb-0"><i class="fa fa-eye mr-1"></i> 852 Visiting Places <i class="fa fa-map-marker mr-1 ml-3"></i> Dubai.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Tour 2 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="trend-item">
+                                    <div class="trend-image">
+                                        <img src="images/trending/trending11.png" alt="image">
+                                    </div>
+                                    <div class="trend-content-main">
+                                        <div class="trend-content">
+                                            <div class="rating-main d-flex align-items-center pb-1">
+                                                <div class="rating">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                </div>
+                                                <span class="ml-2">38 Reviews</span>
+                                            </div>
+                                            <h4><a href="#">Dubai New Year Tour</a></h4>
+                                            <p class="mb-0"><i class="fa fa-eye mr-1"></i> 615 Visiting Places <i class="fa fa-map-marker mr-1 ml-3"></i> Dubai Burj Khalifa.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Tour 3 -->
+                            <div class="col-lg-4 col-md-12">
+                                <div class="trend-item">
+                                    <div class="trend-image">
+                                        <img src="images/trending/trending12.png" alt="image">
+                                    </div>
+                                    <div class="trend-content-main">
+                                        <div class="trend-content">
+                                            <div class="rating-main d-flex align-items-center pb-1">
+                                                <div class="rating">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                </div>
+                                                <span class="ml-2">25 Reviews</span>
+                                            </div>
+                                            <h4><a href="#">Dubai Family Tour</a></h4>
+                                            <p class="mb-0"><i class="fa fa-eye mr-1"></i> 926 Visiting Places <i class="fa fa-map-marker mr-1 ml-3"></i> Dubai</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                 
+                  
+                </div>
+            </div>    
+        </div>
+    </section>
+    <!-- Fav destination Ends -->
+
+    <!-- test starts -->
+    <section class="trending destination pb-6 bg-grey pt-9">
+        <div class="container">
+            <!-- .. -->
+            <style>
+                .price-navtab {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                }
+            
+                .nav-tabs {
+                    border: none; /* Removes default tab borders */
+                }
+            
+                .nav-tabs li {
+                    margin: 0 8px;
+                }
+            
+                .nav-tabs li a {
+                    display: block;
+                    padding: 12px 20px;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: #333;
+                    border-radius: 25px;
+                    background: #f5f5f5;
+                    transition: all 0.3s ease-in-out;
+                    text-decoration: none;
+                }
+            
+                .nav-tabs li a:hover {
+                    background: #ff9800;
+                    color: white;
+                }
+            
+                /* ACTIVE TAB (Turns Red) */
+                .nav-tabs .nav-item .nav-link.active {
+                    background: red !important;
+                    color: white !important;
+                    border: none;
+                }
+            
+                /* INACTIVE TABS */
+                .nav-tabs .nav-item .nav-link {
+                    background: #f5f5f5;
+                    color: #333;
+                }
+            </style>
+            <div class="price-navtab text-center">
+                <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#">Bali</a>
+                    </li>
+                </ul>
+            </div>
+    <div class="trend-box">
+    <div class="tab-content">
+    <div id="weekend" class="tab-pane fade in active">
+        <div class="row g-4"> <!-- Added gap -->
+            <!-- Tour 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="trend-item">
+                    <div class="trend-image">
+                        <img src="images/trending/trending14.png" alt="image">
+                    </div>
+                    <div class="trend-content-main">
+                        <div class="trend-content">
+                            <div class="rating-main d-flex align-items-center pb-1">
+                                <div class="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <span class="ml-2">38 Reviews</span>
+                            </div>
+                            <h4><a href="#">Bali Weekend Tour</a></h4>
+                            <p class="mb-0"><i class="fa fa-eye mr-1"></i> 852 Visiting Places <i class="fa fa-map-marker mr-1 ml-3"></i> Bali.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tour 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="trend-item">
+                    <div class="trend-image">
+                        <img src="images/trending/trending13.png" alt="image">
+                    </div>
+                    <div class="trend-content-main">
+                        <div class="trend-content">
+                            <div class="rating-main d-flex align-items-center pb-1">
+                                <div class="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <span class="ml-2">38 Reviews</span>
+                            </div>
+                            <h4><a href="#">Bali Weekend Tour</a></h4>
+                            <p class="mb-0"><i class="fa fa-eye mr-1"></i> 615 Visiting Places <i class="fa fa-map-marker mr-1 ml-3"></i> Bali.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tour 3 -->
+            <div class="col-lg-4 col-md-12">
+                <div class="trend-item">
+                    <div class="trend-image">
+                        <img src="images/trending/trending7.png" alt="image">
+                    </div>
+                    <div class="trend-content-main">
+                        <div class="trend-content">
+                            <div class="rating-main d-flex align-items-center pb-1">
+                                <div class="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <span class="ml-2">25 Reviews</span>
+                            </div>
+                            <h4><a href="#">Bali Weekend Tour</a></h4>
+                            <p class="mb-0"><i class="fa fa-eye mr-1"></i> 926 Visiting Places <i class="fa fa-map-marker mr-1 ml-3"></i> Bali.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- test ends -->
+
+    <!-- Counter -->
+    <style>
+        .counter-main {
+            background-image: url('images/bg/bg4.png');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 0;
+            position: relative;
+            color: #fff;
+        }
+        .counter-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .counter-item:hover {
+            transform: translateY(-5px);
+        }
+        .counter-item i {
+            font-size: 30px;
+            padding: 15px;
+            background: #0d6efd;
+            color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+        }
+        h3.value {
+            font-size: 30px;
+            font-weight: bold;
+            color: #0d6efd;
+        }
+    </style>
+    <section class="counter-main text-center">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="counter-item">
+                        <i class="fas fa-users" aria-label="Happy Customers"></i>
+                        <h3 class="value" data-target="100">0</h3>
+                        <h4>Happy Customers</h4>
+                    </div>    
+                </div>
+    
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="counter-item">
+                        <i class="fas fa-plane" aria-label="Amazing Tours"></i>
+                        <h3 class="value" data-target="50">0</h3>
+                        <h4>Amazing Tours</h4>
+                    </div>    
+                </div>
+    
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="counter-item">
+                        <i class="fas fa-chart-bar" aria-label="In Business"></i>
+                        <h3 class="value" data-target="3472">0</h3>
+                        <h4>In Business</h4>
+                    </div>    
+                </div>
+    
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="counter-item">
+                        <i class="fas fa-headset" aria-label="Support Cases"></i>
+                        <h3 class="value" data-target="523">0</h3>
+                        <h4>Support Cases</h4>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Counter Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const counters = document.querySelectorAll('.value');
+            const speed = 100;
+    
+            const startCounter = (counter) => {
+                const target = +counter.getAttribute('data-target');
+                const increment = target / speed;
+                let count = 0;
+    
+                const updateCounter = () => {
+                    if (count < target) {
+                        count += increment;
+                        counter.innerText = Math.floor(count);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCounter();
+            };
+    
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        startCounter(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+    
+            counters.forEach(counter => observer.observe(counter));
+        });
+    </script>
+    <!-- End Counter -->
+
+    <!-- top deal starts -->
+    <section class="top-deals bg-grey pt-9">
+        <div class="container">
+            <div class="section-title text-center mb-5 pb-2 mx-auto">
+                <h2 class="m-0" 
+                    style="font-size: 36px; font-weight: 800; color: #222; text-transform: uppercase; 
+                           letter-spacing: 1.5px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);">
+                    Today's <span style="background: linear-gradient(90deg, #ff5733, #ff8c00, #ff5733); 
+                                         -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
+                                         animation: glow 3s infinite alternate;">
+                    Top Deal</span>
+                </h2>
+            
+                <p class="mb-0" 
+                   style="font-size: 18px; font-weight: 500; color: #444; line-height: 1.7; 
+                          margin-top: 12px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">
+                    Travel allows us to discover the true essence of life, transforming us into better individuals. 
+                    Each journey presents a fresh perspective on the world.
+                </p>
+            </div>
+            
+            <style>
+            @keyframes glow {
+                0% { text-shadow: 0px 0px 5px rgba(255, 87, 51, 0.3); }
+                100% { text-shadow: 0px 0px 15px rgba(255, 87, 51, 0.6); }
+            }
+            </style>
+            
+            
+            <div class="row team-slider">
+                <div class="col-lg-4 slider-item">
+                    <div class="slider-image">
+                        <img src="images/new-deal/deal1.png" alt="image">
+                    </div>
+                </div>
+                <div class="col-lg-4 slider-item">
+                    <div class="slider-image">
+                        <img src="images/new-deal/deal2.png" alt="image">
+                    </div>
+                </div>
+                <div class="col-lg-4 slider-item">
+                    <div class="slider-image">
+                        <img src="images/new-deal/deal4.png" alt="image">
+                    </div>
+                </div>
+                <div class="col-md-4 slider-item">
+                    <div class="slider-image">
+                        <img src="images/new-deal/deal99.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- top deal ends -->
+
+    <!-- testomonial start -->
+    <section class="testimonial pb-6 pt-9">
+        <div class="container">
+            <div class="section-title text-center mb-5 pb-2 mx-auto" style="width: 60%; max-width: 600px;">
+                <h2 class="m-0" style="font-size: 32px; font-weight: 700; color: #333;">What 
+                    <span style="color: #ff5733; background: linear-gradient(45deg, #ff5733, #ff8c00); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">People Say About Us</span>
+                </h2>
+                <p class="mb-0" style="font-size: 16px; font-weight: 400; color: #555; line-height: 1.6; margin-top: 10px;">
+                    Travel has helped us to understand the meaning of life and it has helped us become better people. 
+                    Each time we travel, we see the world with new eyes.
+                </p>
+            </div> 
+            
+            <div class="row review-slider" 
+                style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 1100px; margin: 0 auto;">
+                
+                <div class="col-md-4 item" style="flex: 1 1 30%; max-width: 30%;">
+                    <div class="testimonial-item1 text-center" style="padding: 20px; border-radius: 10px; background: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <div class="details">
+                            <p style="color: #333;">
+                                A very sincere and special thank you to Travel4Xplore. We recently visited Gujarat and Ujjain by using services of TravelXplore.
+
+I have been around the India but I have never had such great luxury service like the one provided to me.We visited so many places like Dwarka, Porbandar, Daman and Diu, Somnath, Ujjain.
+We covered total 4 Jyotirlings and 1 Dham.
+
+The total price of the trip was also less than we expected. I would not hesitate to recommend them to anyone. They provide exceptional service and care deeply about their guests.                                        </p>
+                        </div>
+                        <div class="author-info mt-2">
+                            <a href="#"><img src="images/testimonial/img1.png" alt="" style="border-radius: 50%; width: 60px; height: 60px;"></a>
+                            <div class="author-title">
+                                <h4 style="color: #ff5733;">Riya Sinha</h4>
+                                <span>Supervisor</span>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-left mb-2" style="font-size: 24px; color: #ff5733;"></i>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 item" style="flex: 1 1 30%; max-width: 30%;">
+                    <div class="testimonial-item1 text-center" style="padding: 20px; border-radius: 10px; background: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <div class="details">
+                            <p style="color: #333;">
+                                My journey from Dehradun to Nainital and back was a very pleasant and satisfying experience. A committed operator with the most affordable and best packages. The owner is a very nice person and punctual and also guided the tour. The vehicle offered was brand new and the driver was a very nice person and was always smiling and guiding throughout the tour. A very reliable tour operator.
+I am extremely happy to give them the best rating as I had no prior knowledge and only came across the description through Google.
+Really a pleasant experience during the tour.by Travel4Xplore. Specially thanks to Brijmohan ji🙏🙏💐💐💐🎉🎊🎊🥰🥰👍👍🥰🥰                                        </p>
+                        </div>
+                        <div class="author-info mt-2">
+                            <a href="#"><img src="images/testimonial/img2.png" alt="" style="border-radius: 50%; width: 60px; height: 60px;"></a>
+                            <div class="author-title">
+                                <h4 style="color: #ff5733;">Vijay Minan</h4>
+                                <span>Sr. Chef</span>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-left mb-2" style="font-size: 24px; color: #ff5733;"></i>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 item" style="flex: 1 1 30%; max-width: 30%;">
+                    <div class="testimonial-item1 text-center" style="padding: 20px; border-radius: 10px; background: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <div class="details">
+                            <p style="color: #333;">
+                                My experience with Travel4xplore during my October 02 visit to Char Dham Yatra in Uttarakhand was exceptional. The arrangements made by Travel4xplore were top-notch.
+
+The team at Travel4xplore is not only professional but also incredibly knowledgeable about the places, providing valuable insights and recommendations throughout the trip.
+
+I highly recommend  Travel4xplore  to anyone planning a pilgrimage or adventure in Uttarakhand. Thank You Travel4xplore for making our Char Dham Yatra an Unforgettable Experience, Specially Thanks To Birij mohan sir👍                                        </p>
+                        </div>
+                        <div class="author-info mt-2">
+                            <a href="#"><img src="images/testimonial/img3.jpg" alt="" style="border-radius: 50%; width: 60px; height: 60px;"></a>
+                            <div class="author-title">
+                                <h4 style="color: #ff5733;">Ammuoffical</h4>
+                                <span>Manager</span>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-left mb-2" style="font-size: 24px; color: #ff5733;"></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 item" style="flex: 1 1 30%; max-width: 30%;">
+                    <div class="testimonial-item1 text-center" style="padding: 20px; border-radius: 10px; background: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <div class="details">
+                            <p style="color: #333;">
+                                I booked a shimla tour package and surprisingly I have got a nice experience and my experience with travel4xplore was very satisfied and enjoyable,</p>
+                        </div>
+                        <div class="author-info mt-2">
+                            <a href="#"><img src="images/testimonial/img3.jpg" alt="" style="border-radius: 50%; width: 60px; height: 60px;"></a>
+                            <div class="author-title">
+                                <h4 style="color: #ff5733;">Omar Ibn Gani</h4>
+                                <span>Manager</span>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-left mb-2" style="font-size: 24px; color: #ff5733;"></i>
+                    </div>
+                </div>
+                <div class="col-md-4 item" style="flex: 1 1 30%; max-width: 30%;">
+                    <div class="testimonial-item1 text-center" style="padding: 20px; border-radius: 10px; background: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <div class="details">
+                            <p style="color: #333;">
+                                Mr Brijmohan is very kind person, he provided me rental car in my chardham  yatra,  very good car, caring  behavior, helping nature and kind  person.
+I am thankful to Mr Brijmohan
+Dear all Pl use his services for chardham                                        </p>
+                        </div>
+                        <div class="author-info mt-2">
+                            <a href="#"><img src="images/testimonial/img3.jpg" alt="" style="border-radius: 50%; width: 60px; height: 60px;"></a>
+                            <div class="author-title">
+                                <h4 style="color: #ff5733;">Dhanraj</h4>
+                                <span>Manager</span>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-left mb-2" style="font-size: 24px; color: #ff5733;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- testimonial ends --> 
+
+    <!-- News Starts -->
+
+    <!-- News Ends -->
+
+    <!-- Newsletter Starts -->
+    <!-- Newsletter Ends -->
+
+    <!-- footer starts -->
+    <footer class="pt-10" style="background-image:url(images/bg/bg3.png);">
+        <div class="footer-upper pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-4">
+                        <div class="footer-about">
+                            <img src="images/logo.png" alt="">
+                            <p class="mt-3 mb-3">
+                                Travel4Xplore is here to make your travel unforgettable. Whether it's a solo trip, family vacation, or romantic getaway, our experts provide personalized itineraries, insider tips, and 24/7 support. Explore the world confidently with us as your trusted travel partner.
+                            </p>
+                            <div class="social-links">
+                                <ul style="list-style: none; padding: 0; display: flex; gap: 15px; justify-content: center; margin-top: 10px;">
+                                    <li>
+                                        <a href="#" style="background: #1877F2; color: #fff; font-size: 22px; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; transition: transform 0.3s; text-decoration: none;">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" style="background: #1DA1F2; color: #fff; font-size: 22px; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; transition: transform 0.3s; text-decoration: none;">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" style="background: #E4405F; color: #fff; font-size: 22px; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; transition: transform 0.3s; text-decoration: none;">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" style="background: #0077B5; color: #fff; font-size: 22px; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; transition: transform 0.3s; text-decoration: none;">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 mb-4">
+                        <div class="footer-links text-center">
+                            <ul class="list">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">CharDham</a>
+                                </li>
+                                <li>
+                                    <a href="#">Domestic</a>
+                                </li>
+                                <li>
+                                    <a href="#">International</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-listing-main d-lg-flex align-items-center justify-content-between mt-4 text-center">
+                            <div class="footer-listing white">
+                                <i class="fa fa-map-marked white mb-1"></i>
+                                123 Collins Street, sydney, <br>Australia 750
+                            </div>
+                            <div class="footer-listing">
+                                <i class="fa fa-fax white mb-1"></i>
+                                <p class="white mb-0">Toll Free: +47-252-254-2542</p>
+                                <p class="white mb-0">Fax: +47-252-254-2542</p>
+                            </div>
+                            <div class="footer-listing">
+                                <i class="fa fa-headphones white mb-1"></i>
+                                <p class="white mb-0">Support@Yatriiworld.com</p>
+                                <p class="white mb-0">info@Yatriiworld.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright pt-2 pb-2">
+            <div class="container">
+                <div class="copyright-inner">
+                    <div class="copyright-text text-center">
+                        <p class="m-0 white">2025 Travel4Xplore All rights reserved.</p>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="dot-overlay"></div>
+    </footer>
+    <!-- footer ends -->
+    
+    <!-- Back to top start -->
+    <div id="back-to-top">
+        <a href="index-3.html"></a>
+    </div>
+    <!-- Back to top ends -->
+
+    <!-- search popup -->
+
+    <!-- Register Modal -->
+
+    <!-- login Modal -->
+
+    <!-- header side menu --> 
+
+    <!-- *Scripts* -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom-swiper2.js"></script>
+    <script src="js/custom-nav.js"></script>
+    <script src="js/custom-date.js"></script>
+</body>
+</html>
